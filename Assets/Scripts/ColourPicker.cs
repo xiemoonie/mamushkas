@@ -18,10 +18,10 @@ public class ColourPicker : MonoBehaviour
         col = Random.Range(1,5);
        
          switch(col){
-             case 1 : c = new Vector4(1, 0, 0, 1); break; //red
-             case 2 : c = new Vector4(0, 1, 0, 1); break; //green
+             case 1 : c = new Vector4(0, 1, 0, 1); break; //green
+             case 2 : c = new Vector4(1, 0, 0, 1); break; //red
              case 3 : c = new Vector4(0, 0, 1, 1); break; //blue
-             case 4 : c = new Vector4(0.5f, 1, 1, 1); break; //purple
+             case 4 : c = new Vector4(0.5f, 1, 1, 1); break; //skyblue
          
 
          }

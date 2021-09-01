@@ -291,10 +291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bg: {fileID: 1967398877701609329, guid: 0ea07b7ecceb59147875abf7b2c57231, type: 3}
-  healthBar: {fileID: 7578394396212879083, guid: 30cf5ba271bb46143ae3683dee023f18, type: 3}
   currentHealth: 100
   maxHealth: 100
   band: 0
   cp: {fileID: 0}
-  max: 6
-  min: 2
+  max: 7
+  min: 3

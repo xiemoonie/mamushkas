@@ -23,7 +23,7 @@ public class Walls : MonoBehaviour
 
     Color col;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -36,7 +36,7 @@ public class Walls : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-
+        //shows "gameOver"
          if(healthBar.slider.value <= 0){
            col = new Color(1,1,1,1);
            gameOver.color = col;
@@ -46,7 +46,7 @@ public class Walls : MonoBehaviour
                SceneManager.LoadScene(0);
               
           }
-         }
+         }//NextLevel Sign
          if((points > 50) && (scene.name == "GameLv3")){
          col = new Color(1,1,1,1);
          nextLevel.color = col;
@@ -76,7 +76,7 @@ public class Walls : MonoBehaviour
                      
                       //c = bg.GetComponent<ColourPicker>().ReturnColor();
                       c = GameObject.Find("background").GetComponent<ColourPicker>().ReturnColor();
-               
+                      
                   
                       switch(c){
                       case 1 : 
@@ -84,9 +84,11 @@ public class Walls : MonoBehaviour
                         
                        currentHealth = currentHealth - damage;
                        healthBar.SetHealth(currentHealth);
+                     
                        }
                        if(collision.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "1"){
                        points = points + 15;
+                     
                        };
                         
                        break;
@@ -95,10 +97,13 @@ public class Walls : MonoBehaviour
 
                       currentHealth = currentHealth - damage;
                       healthBar.SetHealth(currentHealth);
+                    
                        }
                        if(collision.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "2"){
                        points = points + 15;
+                
                        };
+                       
                        
                        break;
                       case 3 : 
@@ -106,9 +111,11 @@ public class Walls : MonoBehaviour
 
                       currentHealth = currentHealth - damage;
                       healthBar.SetHealth(currentHealth);
+                
                        }
                        if(collision.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "3"){
                        points = points + 15;
+                   
                        };
                         
                        break;
@@ -118,16 +125,18 @@ public class Walls : MonoBehaviour
                      currentHealth = currentHealth - damage;
                      healthBar.SetHealth(currentHealth);
                      
+                     
                        }
                         if(collision.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "4"){
                        points = points + 15;
+                       
                        };
                         
                        break;
                      
                     }
-                     
+                  }     
 
-         }              
+                 }      
 }
-    }
+    
