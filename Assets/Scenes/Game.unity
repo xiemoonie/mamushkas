@@ -945,6 +945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: background
       objectReference: {fileID: 0}
+    - target: {fileID: 1967398877701609330, guid: 0ea07b7ecceb59147875abf7b2c57231, type: 3}
+      propertyPath: col
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1967398877701609340, guid: 0ea07b7ecceb59147875abf7b2c57231, type: 3}
       propertyPath: m_RootOrder
       value: 4

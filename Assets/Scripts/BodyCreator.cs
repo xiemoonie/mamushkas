@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BodyCreator:MonoBehaviour
+public class BodyCreator : MonoBehaviour
 {
-        public int rand;
-        public Sprite[] Sprite_Chest;
-        public int k;
-    
-     
+    public int rand;
+    public Sprite[] Sprite_Chest;
+    public int k;
+
+
     /*
     public static int generateRandomNumber(int min, int max) {
  
@@ -33,23 +33,18 @@ public class BodyCreator:MonoBehaviour
     void Start()
     {
         rand = Random.Range(0, Sprite_Chest.Length);
-        GetComponent<SpriteRenderer>().sprite = Sprite_Chest[rand]; 
-        Change();    
-       
-    }
-
-
-    public void Change(){
-        
         GetComponent<SpriteRenderer>().sprite = Sprite_Chest[rand];
+        Change();
 
-        
-        
     }
 
-     public void Update()
+
+    public virtual void Change() { }
+
+
+    public void Update()
     {
-        
+
     }
 
 }
